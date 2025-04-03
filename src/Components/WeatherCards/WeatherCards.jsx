@@ -54,7 +54,7 @@ const WeatherCards = ( {
     }, [iconString])
 
     return(
-        <div className="w-[22rem] min-w-[22rem] h-[33rem] glasscard p-4">
+        <div className="w-[22rem] min-w-[22rem] h-[33rem] glasscard ">
             <div className="flex w-full justify-center items-center gap-4 mt-12 mb-4">
                 <img src={icon} alt="weather-icon" />
                 <p className="font-bold text-5xl flex justify-center items-center">{temperature} &deg;C</p>
@@ -64,7 +64,7 @@ const WeatherCards = ( {
             </div>
             <div className="w-full flex justify-between items-center mt-4">
                 <p className="flex-1 text-center p-2">{new Date().toDateString()}</p>
-                <p className="flex-1 text-center p-2">{time? time.toLocaleString(locale, { hour: 'numeric', hour12: true, minute: 'numeric' }):"No date available"}</p>
+                <p className="flex-1 text-center p-2">{time? time.toLocaleString(locale, { hour: 'numeric', hour12: true, minute: 'numeric', }):"No date available"}</p>
             </div>
 
             <div className="w-full flex justify-between items-center mt-4 gap-4">
